@@ -71,6 +71,12 @@ variable "region" {
   default     = null
 }
 
+variable "resource_policies" {
+  type        = list(string)
+  description = "Allow attaching resource policies to the template"
+  default     = []
+}
+
 #######
 # disk
 #######

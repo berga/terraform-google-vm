@@ -152,4 +152,6 @@ resource "google_compute_instance_template" "tpl" {
       count = guest_accelerator.value.count
     }
   }
+
+  resource_policies = var.resource_policies
 }
